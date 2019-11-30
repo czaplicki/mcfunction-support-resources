@@ -1,0 +1,15 @@
+name: 'clear'
+cycleMarkers: [
+	{
+		type: 'entity'
+		value: 'targets'
+	}
+	{
+		type: 'item'
+		value: 'item'
+	}
+	{
+		type: 'string'
+		value: 'maxCount'
+	}
+]

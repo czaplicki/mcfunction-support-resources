@@ -1,0 +1,35 @@
+name: 'replaceitem'
+cycleMarkers: [
+	{
+		type: 'option'
+		value: [
+			'entity'
+			'block'
+		]
+		change:
+			entity: [
+				{
+					type: 'entity'
+					value: 'targets'
+				}
+			]
+			block: [
+				{
+					type: 'coord'
+					value: 'x y z'
+				}
+			]
+	}
+	{
+		type: 'inventory-slot'
+		value: 'slot'
+	}
+	{
+		type: 'item'
+		value: 'item'
+	}
+	{
+		type: 'string'
+		value: 'count'
+	}
+]

@@ -1,0 +1,207 @@
+name: 'scoreboard'
+cycleMarkers: [
+	{
+		type: 'option'
+		value: [
+			'objectives'
+			'players'
+		]
+		change:
+			objectives: [
+				{
+					type: 'option'
+					value: [
+						'add'
+						'remove'
+						'setdisplay'
+					]
+					change:
+						add: [
+							{
+								type: 'string'
+								value: 'objective'
+							}
+							{
+								type: 'objective'
+								value: 'criteria'
+							}
+							{
+								type: 'end'
+							}
+						]
+						remove: [
+							{
+								type: 'string'
+								value: 'objective'
+							}
+							{
+								type: 'end'
+							}
+						]
+						setdisplay: [
+							{
+								type: 'objective-slot'
+								value: 'slot'
+							}
+							{
+								type: 'string'
+								value: 'objective'
+							}
+							{
+								type: 'end'
+							}
+						]
+				}
+			]
+			players: [
+				{
+					type: 'option'
+					value: [
+						'add'
+						'enable'
+						'list'
+						'operation'
+						'remove'
+						'reset'
+						'set'
+						'get'
+					]
+					change:
+						add: [
+							{
+								type: 'entity'
+								value: 'target'
+							}
+							{
+								type: 'string'
+								value: 'objective'
+							}
+							{
+								type: 'string'
+								value: 'score'
+							}
+							{
+								type: 'end'
+							}
+						]
+						enable: [
+							{
+								type: 'entity'
+								value: 'target'
+							}
+							{
+								type: 'string'
+								value: 'trigger'
+							}
+							{
+								type: 'end'
+							}
+						]
+						list: [
+							{
+								type: 'entity'
+								value: 'target'
+							}
+							{
+								type: 'end'
+							}
+						]
+						operation: [
+							{
+								type: 'entity'
+								value: 'target'
+							}
+							{
+								type: 'string'
+								value: 'target objective'
+							}
+							{
+								type: 'option'
+								value: [
+									'+='
+									'-='
+									'*='
+									'/='
+									'%='
+									'='
+									'<'
+									'>'
+									'><'
+								]
+							}
+							{
+								type: 'entity'
+								value: 'source'
+							}
+							{
+								type: 'string'
+								value: 'source objective'
+							}
+							{
+								type: 'end'
+							}
+						]
+						remove: [
+							{
+								type: 'entity'
+								value: 'target'
+							}
+							{
+								type: 'string'
+								value: 'objective'
+							}
+							{
+								type: 'string'
+								value: 'score'
+							}
+							{
+								type: 'end'
+							}
+						]
+						reset: [
+							{
+								type: 'entity'
+								value: 'targets'
+							}
+							{
+								type: 'string'
+								value: 'objective'
+							}
+							{
+								type: 'end'
+							}
+						]
+						set: [
+							{
+								type: 'entity'
+								value: 'target'
+							}
+							{
+								type: 'string'
+								value: 'objective'
+							}
+							{
+								type: 'string'
+								value: 'score'
+							}
+							{
+								type: 'end'
+							}
+						]
+						get: [
+							{
+								type: 'entity'
+								value: 'targets'
+							}
+							{
+								type: 'string'
+								value: 'objective'
+							}
+							{
+								type: 'end'
+							}
+						]
+				}
+			]
+	}
+]

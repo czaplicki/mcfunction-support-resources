@@ -1,0 +1,34 @@
+name: 'particle'
+cycleMarkers: [
+	{
+		type: 'particle'
+		value: 'name'
+	}
+	{
+		type: 'coord'
+		value: 'x y z'
+	}
+	{
+		type: 'coord'
+		value: 'x y z'
+	}
+	{
+		type: 'string'
+		value: 'speed'
+	}
+	{
+		type: 'string'
+		value: 'count'
+	}
+	{
+		type: 'option'
+		value: [
+			'normal'
+			'force'
+		]
+	}
+	{
+		type: 'entity'
+		value: 'veiwers'
+	}
+]

@@ -1,0 +1,40 @@
+name: 'title'
+cycleMarkers: [
+	{
+		type: 'entity'
+		value: 'target'
+	}
+	{
+		type: 'option'
+		value: [
+			'actionbar'
+			'clear'
+			'reset'
+			'subtitle'
+			'times'
+			'title'
+		]
+		change:
+			times: [
+				{
+					type: 'string'
+					value: 'fadeIn'
+				}
+				{
+					type: 'string'
+					value: 'stay'
+				}
+				{
+					type: 'string'
+					value: 'fadeOut'
+				}
+				{
+					type: 'end'
+				}
+			]
+	}
+	{
+		type: 'string'
+		value: 'title'
+	}
+]

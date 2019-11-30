@@ -1,0 +1,106 @@
+name: 'worldborder'
+cycleMarkers: [
+	{
+		type: 'option'
+		value: [
+			'add'
+			'center'
+			'damage'
+			'get'
+			'set'
+			'warning'
+		]
+		change:
+			add: [
+				{
+					type: 'string'
+					value: 'distance'
+				}
+				{
+					type: 'string'
+					value: 'time'
+				}
+				{
+					type: 'end'
+				}
+			]
+			center: [
+				{
+					type: 'center'
+					value: 'x z'
+				}
+				{
+					type: 'end'
+				}
+			]
+			damage: [
+				{
+					type: 'option'
+					value: [
+						'amount'
+						'buffer'
+					]
+					change:
+						amount: [
+							{
+								type: 'string'
+								value: 'damagePerBlock'
+							}
+							{
+								type: 'end'
+							}
+						]
+						buffer: [
+							{
+								type: 'string'
+								value: 'distance'
+							}
+							{
+								type: 'end'
+							}
+						]
+				}
+			]
+			set: [
+				{
+					type: 'string'
+					value: 'distance'
+				}
+				{
+					type: 'string'
+					value: 'time'
+				}
+				{
+					type: 'end'
+				}
+			]
+			warning: [
+				{
+					type: 'option'
+					value: [
+						'distance'
+						'time'
+					]
+					change:
+						distance: [
+							{
+								type: 'string'
+								value: 'distance'
+							}
+							{
+								type: 'end'
+							}
+						]
+						time: [
+							{
+								type: 'string'
+								value: 'time'
+							}
+							{
+								type: 'end'
+							}
+						]
+				}
+			]
+	}
+]

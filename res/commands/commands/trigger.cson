@@ -1,0 +1,14 @@
+name: 'trigger'
+cycleMarkers: [
+	{
+		type: 'string'
+		value: 'objective'
+	}
+	{
+		type: 'option'
+		value: [
+			'add'
+			'set'
+		]
+	}
+]

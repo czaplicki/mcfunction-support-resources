@@ -1,0 +1,43 @@
+name: 'time'
+cycleMarkers: [
+	{
+		type: 'option'
+		value: [
+			'add'
+			'query'
+			'set'
+		]
+		change:
+			add: [
+				{
+					type: 'string'
+					value: 'time'
+				}
+				{
+					type: 'end'
+				}
+			]
+			query: [
+				{
+					type: 'option'
+					value: [
+						'day'
+						'daytime'
+						'gametime'
+					]
+				}
+				{
+					type: 'end'
+				}
+			]
+			set: [
+				{
+					type: 'string'
+					value: 'time'
+				}
+				{
+					type: 'end'
+				}
+			]
+	}
+]

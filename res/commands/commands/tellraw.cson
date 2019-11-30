@@ -1,0 +1,11 @@
+name: 'tellraw'
+cycleMarkers: [
+	{
+		type: 'entity'
+		value: 'targets'
+	}
+	{
+		type: 'string'
+		value: 'message'
+	}
+]

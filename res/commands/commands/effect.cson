@@ -1,0 +1,41 @@
+name: 'effect'
+cycleMarkers: [
+	{
+		type: 'option'
+		value: [
+			'clear'
+			'give'
+		]
+		change:
+			clear: [
+				{
+					type: 'entity'
+					value: 'targets'
+					optional: true
+				}
+				{
+					type: 'end'
+				}
+			]
+	}
+	{
+		type: 'entity'
+		value: 'targets'
+	}
+	{
+		type: 'effect'
+		value: 'effect'
+	}
+	{
+		type: 'string'
+		value: 'seconds'
+	}
+	{
+		type: 'string'
+		value: 'amplifier'
+	}
+	{
+		type: 'boolean'
+		value: 'hideParticles'
+	}
+]

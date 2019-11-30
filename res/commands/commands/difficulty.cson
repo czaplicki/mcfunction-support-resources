@@ -1,0 +1,12 @@
+name: 'difficulty'
+cycleMarkers: [
+	{
+		type: 'option'
+		value: [
+			'easy'
+			'hard'
+			'normal'
+			'peaceful'
+		]
+	}
+]

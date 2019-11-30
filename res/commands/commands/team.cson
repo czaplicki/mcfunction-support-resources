@@ -1,0 +1,179 @@
+name: 'team'
+cycleMarkers: [
+	{
+		type: 'option'
+		value: [
+			'add'
+			'empty'
+			'join'
+			'leave'
+			'list'
+			'option'
+			'remove'
+		]
+		change:
+			add: [
+				{
+					type: 'string'
+					value: 'team'
+				}
+				{
+					type: 'greedy'
+					value: 'display name'
+				}
+				{
+					type: 'end'
+				}
+			]
+			empty: [
+				{
+					type: 'string'
+					value: 'team'
+				}
+				{
+					type: 'end'
+				}
+			]
+			join: [
+				{
+					type: 'string'
+					value: 'team'
+				}
+				{
+					type: 'entity'
+					value: 'memebers'
+				}
+				{
+					type: 'end'
+				}
+			]
+			leave: [
+				{
+					type: 'entity'
+					value: 'memebers'
+				}
+				{
+					type: 'end'
+				}
+			]
+			list: [
+				{
+					type: 'string'
+					value: 'team'
+				}
+				{
+					type: 'end'
+				}
+			]
+			option: [
+				{
+					type: 'string'
+					value: 'team'
+				}
+				{
+					type: 'option'
+					value: [
+						'collisionRule'
+						'color'
+						'deathMessageVisibility'
+						'friendlyFire'
+						'nametagVisibility'
+						'seeFriendlyInvisibles'
+					]
+					change:
+						collisionRule: [
+							{
+								type: 'option'
+								value: [
+									'always'
+									'never'
+									'pushOtherTeams'
+									'pushOwnTeam'
+								]
+							}
+							{
+								type: 'end'
+							}
+						]
+						color: [
+							{
+								type: 'option'
+								value: [
+									'aqua'
+									'black'
+									'blue'
+									'dark_blue'
+									'dark_green'
+									'dark_aqua'
+									'dark_red'
+									'dark_purple'
+									'dark_gray'
+									'gold'
+									'gray'
+									'green'
+									'red'
+									'light_purple'
+									'yellow'
+									'white'
+								]
+							}
+							{
+								type: 'end'
+							}
+						]
+						deathMessageVisibility: [
+							{
+								type: 'option'
+								value: [
+									'always'
+									'never'
+									'hideForOtherTeams'
+									'hideForOwnTeam'
+								]
+							}
+							{
+								type: 'end'
+							}
+						]
+						friendlyFire: [
+							{
+								type: 'boolean'
+								value: 'value'
+							}
+							{
+								type: 'end'
+							}
+						]
+						nametagVisibility: [
+							{
+								type: 'option'
+								value: [
+									'always'
+									'never'
+									'hideForOtherTeams'
+									'hideForOwnTeam'
+								]
+							}
+							{
+								type: 'end'
+							}
+						]
+						seeFriendlyInvisibles: [
+							{
+								type: 'boolean'
+								value: 'value'
+							}
+							{
+								type: 'end'
+							}
+						]
+				}
+			]
+			remove: [
+				{
+					type: 'string'
+					value: 'team'
+				}
+			]
+	}
+]

@@ -1,0 +1,47 @@
+name: 'advancement'
+cycleMarkers: [
+	{
+		type: 'option'
+		value: [
+			'grant'
+			'revoke'
+		]
+	}
+	{
+		type: 'entity'
+		value: 'target'
+	}
+	{
+		type: 'option'
+		value: [
+			'everything'
+			'from'
+			'only'
+			'through'
+			'until'
+		]
+		change:
+			everything: [
+				{
+					type: 'end'
+				}
+			]
+			only: [
+				{
+					type: 'advancement'
+					value: 'advancement'
+				}
+				{
+					type: 'string'
+					value: 'criterion'
+				}
+				{
+					type: 'end'
+				}
+			]
+	}
+	{
+		type: 'advancement'
+		value: 'advancement'
+	}
+]

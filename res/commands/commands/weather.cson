@@ -1,0 +1,15 @@
+name: 'weather'
+cycleMarkers: [
+	{
+		type: 'option'
+		value: [
+			'clear'
+			'rain'
+			'thunder'
+		]
+	}
+	{
+		type: 'string'
+		value: 'duration'
+	}
+]

@@ -1,0 +1,32 @@
+name: 'fill'
+cycleMarkers: [
+	{
+		type: 'coord'
+		value: 'x y z'
+	}
+	{
+		type: 'coord'
+		value: 'xt yt zt'
+	}
+	{
+		type: 'block'
+		value: 'block'
+	}
+	{
+		type: 'option'
+		value: [
+			'destroy'
+			'hollow'
+			'keep'
+			'outline'
+			'replace'
+		]
+		change:
+			replace: [
+				{
+					type: 'block'
+					filter: 'filter'
+				}
+			]
+	}
+]

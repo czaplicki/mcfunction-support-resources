@@ -1,0 +1,149 @@
+type: 'option'
+value: [
+	'align'
+	'as'
+	'at'
+	'if'
+	'positioned'
+	'store'
+	'unless'
+	'run'
+]
+change:
+	align: [
+		{
+			type: 'option'
+			value: [
+				'x'
+				'y'
+				'z'
+				'xy'
+				'xz'
+				'yz'
+				'xyz'
+			]
+		}
+		{
+			include: 'execute'
+		}
+	]
+	as: [
+		{
+			type: 'entity'
+			value: 'targets'
+		}
+		{
+			include: 'execute'
+		}
+	]
+	at: [
+		{
+			type: 'entity'
+			value: 'targets'
+		}
+		{
+			include: 'execute'
+		}
+	]
+	if: [
+		{
+			include: 'if-unless'
+		}
+		{
+			include: 'execute'
+		}
+	]
+	unless: [
+		{
+			include: 'if-unless'
+		}
+		{
+			include: 'execute'
+		}
+	]
+	positioned: [
+		{
+			type: 'coord'
+			value: 'x y z'
+		}
+		{
+			include: 'execute'
+		}
+	]
+	store: [
+		{
+			type: 'option'
+			value: [
+				'result'
+				'success'
+			]
+		}
+		{
+			type: 'option'
+			value: [
+				'block'
+				'entity'
+				'score'
+				'storage'
+			]
+			change:
+				block: [
+					{
+						type: 'coord'
+						value: 'x y z'
+					}
+				]
+				entity: [
+					{
+						type: 'entity'
+						value: 'target'
+					}
+				]
+				score: [
+					{
+						type: 'entity'
+						value: 'target'
+					}
+					{
+						type: 'string'
+						value: 'objective'
+					}
+					{
+						include: 'execute'
+					}
+				]
+				storage: [
+					{
+						type: 'string'
+						value: 'target'
+					}
+				]
+		}
+		{
+			type: 'string'
+			value: 'path'
+		}
+		{
+			type: 'option'
+			value: [
+				'byte'
+				'double'
+				'float'
+				'int'
+				'long'
+				'short'
+			]
+		}
+		{
+			type: 'string'
+			value: 'scale'
+		}
+		{
+			include: 'execute'
+		}
+	]
+	run: [
+		{
+			type: 'command'
+		}
+	]

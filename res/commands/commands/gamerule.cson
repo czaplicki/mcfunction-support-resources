@@ -1,0 +1,78 @@
+name: 'gamerule'
+cycleMarkers: [
+	{
+		type: 'option'
+		value: [
+			'announceAdvancements'
+			'commandBlockOutput'
+			'disableElytraMovementCheck'
+			'disableRaids'
+			'doDaylightCycle'
+			'doEntityDrops'
+			'doFireTick'
+			'doImmediateRespawn'
+			'doInsomnia'
+			'doLimitedCrafting'
+			'doMobloot'
+			'doMobSpawning'
+			'drowningDamage'
+			'doTileDrops'
+			'doWeatherCycle'
+			'fallDamage'
+			'fireDamage'
+			'keepInventory'
+			'logAdminCommands'
+			'maxCommandChainLength'
+			'maxEntityCramming'
+			'mobGriefing'
+			'naturalRegeneration'
+			'randomTickSpeed'
+			'reducedDebugInfo'
+			'sendCommandFeedback'
+			'showDeathMessages'
+			'spawnRadius'
+			'spectatorsGenerateChunks'
+		]
+		change:
+			maxCommandChainLength: [
+				{
+					type: 'string'
+					value: 'value'
+				}
+				{
+					type: 'end'
+				}
+			]
+			maxEntityCramming: [
+				{
+					type: 'string'
+					value: 'value'
+				}
+				{
+					type: 'end'
+				}
+			]
+			randomTickSpeed: [
+				{
+					type: 'string'
+					value: 'value'
+				}
+				{
+					type: 'end'
+				}
+			]
+			spawnRadius: [
+				{
+					type: 'string'
+					value: 'value'
+				}
+				{
+					type: 'end'
+				}
+			]
+	}
+	{
+		type: 'boolean'
+		value: 'value'
+	}
+]

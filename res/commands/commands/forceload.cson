@@ -1,0 +1,62 @@
+name: 'forceload'
+cycleMarkers: [
+	{
+		type: 'option'
+		value: [
+			'add'
+			'remove'
+			'query'
+		]
+		change:
+			add: [
+				{
+					type: 'string'
+					value: 'x1'
+				}
+				{
+					type: 'string'
+					value: 'y1'
+				}
+				{
+					type: 'string'
+					value: 'x2'
+					optional: true
+				}
+				{
+					type: 'string'
+					value: 'y2'
+					optional: true
+				}
+			]
+			remove: [
+				{
+					type: 'string'
+					value: 'x1'
+				}
+				{
+					type: 'string'
+					value: 'y1'
+				}
+				{
+					type: 'string'
+					value: 'x2'
+					optional: true
+				}
+				{
+					type: 'string'
+					value: 'y2'
+					optional: true
+				}
+			]
+			query: [
+				{
+					type: 'string'
+					value: 'x1'
+				}
+				{
+					type: 'string'
+					value: 'y1'
+				}
+			]
+	}
+]

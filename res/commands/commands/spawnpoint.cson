@@ -1,0 +1,13 @@
+name: 'spawnpoint'
+cycleMarkers: [
+	{
+		type: 'entity'
+		value: 'target'
+		optional: true
+	}
+	{
+		type: 'coord'
+		value: 'x y z'
+		optional: true
+	}
+]

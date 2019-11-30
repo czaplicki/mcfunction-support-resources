@@ -1,0 +1,15 @@
+name: 'give'
+cycleMarkers: [
+	{
+		type: 'entity'
+		value: 'target'
+	}
+	{
+		type: 'item'
+		value: 'item'
+	}
+	{
+		type: 'string'
+		value: 'count'
+	}
+]

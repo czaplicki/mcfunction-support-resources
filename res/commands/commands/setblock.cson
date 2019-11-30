@@ -1,0 +1,19 @@
+name: 'setblock'
+cycleMarkers: [
+	{
+		type: 'coord'
+		value: 'x y z'
+	}
+	{
+		type: 'block'
+		value: 'block'
+	}
+	{
+		type: 'option'
+		value: [
+			'destroy'
+			'keep'
+			'replace'
+		]
+	}
+]

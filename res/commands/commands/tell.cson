@@ -1,0 +1,11 @@
+name: 'tell'
+cycleMarkers: [
+	{
+		type: 'entity'
+		value: 'targets'
+	}
+	{
+		type: 'greedy'
+		value: 'message'
+	}
+]

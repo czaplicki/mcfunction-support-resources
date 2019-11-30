@@ -1,0 +1,38 @@
+name: 'clone'
+cycleMarkers: [
+	{
+		type: 'coord'
+		value: 'x1 y1 z1'
+	}
+	{
+		type: 'coord'
+		value: 'x2 y2 z2'
+	}
+	{
+		type: 'coord'
+		value: 'xt yt zt'
+	}
+	{
+		type: 'option'
+		value: [
+			'filtered'
+			'masked'
+			'replace'
+		]
+		change:
+			filtered: [
+				{
+					type: 'block'
+					value: 'filter'
+				}
+			]
+	}
+	{
+		type: 'option'
+		value: [
+			'force'
+			'move'
+			'normal'
+		]
+	}
+]

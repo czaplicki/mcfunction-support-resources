@@ -1,0 +1,25 @@
+name: 'tag'
+cycleMarkers: [
+	{
+		type: 'entity'
+		value: 'target'
+	}
+	{
+		type: 'option'
+		value: [
+			'add'
+			'list'
+			'remove'
+		]
+		change:
+			list: [
+				{
+					type: 'end'
+				}
+			]
+	}
+	{
+		type: 'string'
+		value: 'name'
+	}
+]

@@ -1,0 +1,226 @@
+name: 'data'
+cycleMarkers: [
+	{
+		type: 'option'
+		value: [
+			'get'
+			'merge'
+			'modify'
+			'remove'
+		]
+		change:
+			get: [
+				{
+					type: 'option'
+					value: [
+						'block'
+						'entity'
+						'storage'
+					]
+					change:
+						block: [
+							{
+								type: 'coord'
+								value: 'x y z'
+							}
+						]
+						entity: [
+							{
+								type: 'entity'
+								value: 'target'
+							}
+						]
+						storage: [
+							{
+								type: 'string'
+								value: 'target'
+							}
+						]
+				}
+				{
+					type: 'string'
+					value: 'path'
+					optional: true
+				}
+				{
+					type: 'string'
+					value: 'scale'
+					optional: true
+				}
+				{
+					type: 'end'
+				}
+			]
+			merge: [
+				{
+					type: 'option'
+					value: [
+						'block'
+						'entity'
+						'storage'
+					]
+					change:
+						block: [
+							{
+								type: 'coord'
+								value: 'x y z'
+							}
+						]
+						entity: [
+							{
+								type: 'entity'
+								value: 'target'
+							}
+						]
+						storage: [
+							{
+								type: 'string'
+								value: 'target'
+							}
+						]
+				}
+				{
+					type: 'nbt'
+					value: 'nbt'
+				}
+				{
+					type: 'end'
+				}
+			]
+			modify: [
+				{
+					type: 'option'
+					value: [
+						'block'
+						'entity'
+						'storage'
+					]
+					change:
+						block: [
+							{
+								type: 'coord'
+								value: 'x y z'
+							}
+						]
+						entity: [
+							{
+								type: 'entity'
+								value: 'target'
+							}
+						]
+						storage: [
+							{
+								type: 'string'
+								value: 'target'
+							}
+						]
+				}
+				{
+					type: 'string'
+					value: 'path'
+					optional: true
+				}
+				{
+					type: 'option'
+					value: [
+						'append'
+						'insert'
+						'merge'
+						'prepend'
+						'set'
+					]
+					change:
+						insert: [
+							{
+								type: 'string'
+								value: 'index'
+							}
+						]
+				}
+				{
+					type: 'option'
+					value: [
+						'from'
+						'value'
+					]
+					change:
+						from: [
+							{
+								type: 'option'
+								value: [
+									'block'
+									'entity'
+									'storage'
+								]
+								change:
+									block: [
+										{
+											type: 'coord'
+											value: 'x y z'
+										}
+									]
+									entity: [
+										{
+											type: 'entity'
+											value: 'target'
+										}
+									]
+									storage: [
+										{
+											type: 'string'
+											value: 'target'
+										}
+									]
+							}
+							{
+								type: 'string'
+								value: 'path'
+								optional: true
+							}
+						]
+						value: [
+							{
+								type: 'string'
+								value: 'value'
+							}
+						]
+				}
+			]
+			remove: [
+				{
+					type: 'option'
+					value: [
+						'block'
+						'entity'
+						'storage'
+					]
+					change:
+						block: [
+							{
+								type: 'coord'
+								value: 'x y z'
+							}
+						]
+						entity: [
+							{
+								type: 'entity'
+								value: 'target'
+							}
+						]
+						storage: [
+							{
+								type: 'string'
+								value: 'target'
+							}
+						]
+				}
+				{
+					type: 'string'
+					value: 'path'
+				}
+				{
+					type: 'end'
+				}
+			]
+	}
+]

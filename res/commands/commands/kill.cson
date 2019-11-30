@@ -1,0 +1,8 @@
+name: 'kill'
+cycleMarkers: [
+	{
+		type: 'entity'
+		value: 'vicitms'
+		optional: true
+	}
+]

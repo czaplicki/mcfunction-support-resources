@@ -1,0 +1,26 @@
+name: 'stopsound'
+cycleMarkers: [
+	{
+		type: 'entity'
+		value: 'target'
+	}
+	{
+		type: 'option'
+		value: [
+			'ambient'
+			'block'
+			'hostile'
+			'master'
+			'music'
+			'neutral'
+			'player'
+			'record'
+			'voice'
+			'weather'
+		]
+	}
+	{
+		type: 'sound'
+		value: 'name'
+	}
+]

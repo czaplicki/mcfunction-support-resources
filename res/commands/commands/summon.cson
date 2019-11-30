@@ -1,0 +1,15 @@
+name: 'summon'
+cycleMarkers: [
+	{
+		type: 'entity-id'
+		value: 'name'
+	}
+	{
+		type: 'coord'
+		value: 'x y z'
+	}
+	{
+		type: 'nbt'
+		value: 'nbt'
+	}
+]

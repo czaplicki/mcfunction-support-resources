@@ -1,0 +1,43 @@
+name: 'experience'
+cycleMarkers: [
+	{
+		type: 'option'
+		value: [
+			'add'
+			'set'
+			'query'
+		]
+		change:
+			query: [
+				{
+					type: 'entity'
+					value: 'player'
+				}
+				{
+					type: 'option'
+					value: [
+						'points'
+						'levels'
+					]
+				}
+				{
+					type: 'end'
+				}
+			]
+	}
+	{
+		type: 'entity'
+		value: 'players'
+	}
+	{
+		type: 'string'
+		value: 'amount'
+	}
+	{
+		type: 'option'
+		value: [
+			'points'
+			'levels'
+		]
+	}
+]

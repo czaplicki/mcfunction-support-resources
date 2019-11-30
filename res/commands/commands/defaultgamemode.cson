@@ -1,0 +1,12 @@
+name: 'defaultgamemode'
+cycleMarkers: [
+	{
+		type: 'option'
+		value: [
+			'adventure'
+			'creative'
+			'spectator'
+			'survival'
+		]
+	}
+]

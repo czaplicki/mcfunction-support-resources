@@ -1,0 +1,23 @@
+name: 'spreadplayers'
+cycleMarkers: [
+	{
+		type: 'center'
+		value: 'x z'
+	}
+	{
+		type: 'string'
+		value: 'spreadDistance'
+	}
+	{
+		type: 'string'
+		value: 'maxRange'
+	}
+	{
+		type: 'boolean'
+		value: 'respectTeams'
+	}
+	{
+		type: 'entity'
+		value: 'victims'
+	}
+]

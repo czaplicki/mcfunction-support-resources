@@ -1,0 +1,123 @@
+type: 'option'
+value: [
+	'entity'
+	'block'
+	'blocks'
+	'score'
+]
+change:
+	entity: [
+		{
+			type: 'entity'
+			value: 'targets'
+		}
+	]
+	block: [
+		{
+			type: 'coord'
+			value: 'x y z'
+		}
+		{
+			type: 'block'
+			value: 'block'
+		}
+	]
+	blocks: [
+		{
+			type: 'coord'
+			value: 'x1 y1 z1'
+		}
+		{
+			type: 'coord'
+			value: 'x2 y2 z2'
+		}
+		{
+			type: 'coord'
+			value: 'xt yt zt'
+		}
+		{
+			type: 'option'
+			value: [
+				'all'
+				'masked'
+			]
+		}
+	]
+	score: [
+		{
+			type: 'entity'
+			value: 'target'
+		}
+		{
+			type: 'string'
+			value: 'targetObjective'
+		}
+		{
+			type: 'option'
+			value: [
+				'<'
+				'<='
+				'='
+				'>='
+				'>'
+				'matches'
+			]
+			change:
+				matches: [
+					{
+						type: 'string'
+						value: 'range'
+					}
+				]
+				'<': [
+					{
+						type: 'entity'
+						value: 'source'
+					}
+					{
+						type: 'string'
+						value: 'sourceObjective'
+					}
+				]
+				'<=': [
+					{
+						type: 'entity'
+						value: 'source'
+					}
+					{
+						type: 'string'
+						value: 'sourceObjective'
+					}
+				]
+				'=': [
+					{
+						type: 'entity'
+						value: 'source'
+					}
+					{
+						type: 'string'
+						value: 'sourceObjective'
+					}
+				]
+				'=>': [
+					{
+						type: 'entity'
+						value: 'source'
+					}
+					{
+						type: 'string'
+						value: 'sourceObjective'
+					}
+				]
+				'>': [
+					{
+						type: 'entity'
+						value: 'source'
+					}
+					{
+						type: 'string'
+						value: 'sourceObjective'
+					}
+				]
+		}
+	]

@@ -1,0 +1,7 @@
+name: 'say'
+cycleMarkers: [
+	{
+		type: 'greedy'
+		value: 'message'
+	}
+]

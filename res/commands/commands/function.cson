@@ -1,0 +1,7 @@
+name: 'function'
+cycleMarkers: [
+	{
+		type: 'function'
+		value: 'name'
+	}
+]

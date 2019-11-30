@@ -1,0 +1,42 @@
+name: 'playsound'
+cycleMarkers: [
+	{
+		type: 'sound'
+		value: 'name'
+	}
+	{
+		type: 'option'
+		value: [
+			'ambient'
+			'block'
+			'hostile'
+			'master'
+			'music'
+			'neutral'
+			'player'
+			'record'
+			'voice'
+			'weather'
+		]
+	}
+	{
+		type: 'entity'
+		value: 'target'
+	}
+	{
+		type: 'coord'
+		value: 'x y z'
+	}
+	{
+		type: 'string'
+		value: 'volume'
+	}
+	{
+		type: 'string'
+		value: 'pitch'
+	}
+	{
+		type: 'string'
+		value: 'minVolume'
+	}
+]
