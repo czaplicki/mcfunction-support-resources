@@ -1,0 +1,25 @@
+type: 'option'
+value: [
+	'block'
+	'entity'
+	'storage'
+]
+change:
+	block: [
+		{
+			type: 'coord'
+			value: 'x y z'
+		}
+	]
+	entity: [
+		{
+			type: 'entity'
+			value: 'target'
+		}
+	]
+	storage: [
+		{
+			type: 'string'
+			value: 'target'
+		}
+	]

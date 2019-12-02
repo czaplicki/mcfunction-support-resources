@@ -11,31 +11,7 @@ cycleMarkers: [
 		change:
 			get: [
 				{
-					type: 'option'
-					value: [
-						'block'
-						'entity'
-						'storage'
-					]
-					change:
-						block: [
-							{
-								type: 'coord'
-								value: 'x y z'
-							}
-						]
-						entity: [
-							{
-								type: 'entity'
-								value: 'target'
-							}
-						]
-						storage: [
-							{
-								type: 'string'
-								value: 'target'
-							}
-						]
+					include : "nbt-location"
 				}
 				{
 					type: 'string'
@@ -53,31 +29,7 @@ cycleMarkers: [
 			]
 			merge: [
 				{
-					type: 'option'
-					value: [
-						'block'
-						'entity'
-						'storage'
-					]
-					change:
-						block: [
-							{
-								type: 'coord'
-								value: 'x y z'
-							}
-						]
-						entity: [
-							{
-								type: 'entity'
-								value: 'target'
-							}
-						]
-						storage: [
-							{
-								type: 'string'
-								value: 'target'
-							}
-						]
+					include : "nbt-location"
 				}
 				{
 					type: 'nbt'
@@ -89,31 +41,7 @@ cycleMarkers: [
 			]
 			modify: [
 				{
-					type: 'option'
-					value: [
-						'block'
-						'entity'
-						'storage'
-					]
-					change:
-						block: [
-							{
-								type: 'coord'
-								value: 'x y z'
-							}
-						]
-						entity: [
-							{
-								type: 'entity'
-								value: 'target'
-							}
-						]
-						storage: [
-							{
-								type: 'string'
-								value: 'target'
-							}
-						]
+					include : "nbt-location"
 				}
 				{
 					type: 'string'
@@ -146,31 +74,7 @@ cycleMarkers: [
 					change:
 						from: [
 							{
-								type: 'option'
-								value: [
-									'block'
-									'entity'
-									'storage'
-								]
-								change:
-									block: [
-										{
-											type: 'coord'
-											value: 'x y z'
-										}
-									]
-									entity: [
-										{
-											type: 'entity'
-											value: 'target'
-										}
-									]
-									storage: [
-										{
-											type: 'string'
-											value: 'target'
-										}
-									]
+								include : "nbt-location"
 							}
 							{
 								type: 'string'
@@ -188,31 +92,7 @@ cycleMarkers: [
 			]
 			remove: [
 				{
-					type: 'option'
-					value: [
-						'block'
-						'entity'
-						'storage'
-					]
-					change:
-						block: [
-							{
-								type: 'coord'
-								value: 'x y z'
-							}
-						]
-						entity: [
-							{
-								type: 'entity'
-								value: 'target'
-							}
-						]
-						storage: [
-							{
-								type: 'string'
-								value: 'target'
-							}
-						]
+					include : "nbt-location"
 				}
 				{
 					type: 'string'
