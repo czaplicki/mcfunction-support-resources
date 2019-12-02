@@ -8,7 +8,7 @@ walk = (dir) ->
 
 	unless fs.existsSync(dir) then	return []
 
-	fs.readdirSync(dir).map (f) ->
+	fs.readdirSync(dir).filter((x)->!x.startsWith '.').map (f) ->
 
 		p = path.join(dir, f)
 		stat = fs.statSync(p)
