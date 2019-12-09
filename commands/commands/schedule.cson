@@ -10,21 +10,23 @@ cycleMarkers : [
 			clear : [
 				{ type : "end" }
 			]
-		}
-		{
-			type : "function"
-			value : "function"
-		}
-		{
-			type: "string"
-			value: "time"
-		}
-		{
-			type: "option"
-			optional : true
-			value : [
-				"append"
-				"replace"
+			function : [
+				{
+					type : "function"
+					value : "function"
+				}
+				{
+					type: "string"
+					value: "time"
+				}
+				{
+					type: "option"
+					optional : true
+					value : [
+						"append"
+						"replace"
+					]
+				}
 			]
 		}
 	}

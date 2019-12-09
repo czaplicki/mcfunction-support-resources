@@ -1,0 +1,38 @@
+name: "datapack"
+cycleMarkers : [
+	{
+		type : "option"
+		value : [
+			"disable"
+			"enable"
+			"list"
+		],
+		change : {
+			disable : [
+				{
+					type: "string"
+					value: "name"
+				}
+				{ type : "end" }
+			]
+			enable : [
+				{
+					type: "string"
+					value: "name"
+				}
+				{ type : "end" }
+			]
+			list: [
+				{
+					type: "option"
+					optional: true
+					value:[
+						"availble"
+						"enabled"
+					]
+				}
+				{ type : "end" }
+			]
+		}
+	}
+]
