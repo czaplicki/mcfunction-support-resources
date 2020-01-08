@@ -4,6 +4,8 @@ value: [
 	'block'
 	'blocks'
 	'score'
+	'predicate'
+	'data'
 ]
 change:
 	entity: [
@@ -119,5 +121,20 @@ change:
 						value: 'sourceObjective'
 					}
 				]
+		}
+	]
+	predicate : [
+		{
+			type: "string"
+			value: "target"
+		}
+	]
+	data : [
+		{
+			include : "nbt-location"
+		}
+		{
+			type: "string"
+			value : "path"
 		}
 	]

@@ -1,0 +1,33 @@
+name: "schedule"
+cycleMarkers : [
+	{
+		type : "option"
+		value : [
+			"function",
+			"clear"
+		],
+		change : {
+			clear : [
+				{ type : "end" }
+			]
+			function : [
+				{
+					type : "function"
+					value : "function"
+				}
+				{
+					type: "string"
+					value: "time"
+				}
+				{
+					type: "option"
+					optional : true
+					value : [
+						"append"
+						"replace"
+					]
+				}
+			]
+		}
+	}
+]
