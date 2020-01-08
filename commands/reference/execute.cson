@@ -1,6 +1,7 @@
 type: 'option'
 value: [
 	'align'
+	'anchored'
 	'as'
 	'at'
 	'if'
