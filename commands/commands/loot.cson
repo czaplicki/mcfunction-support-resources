@@ -1,0 +1,93 @@
+name: 'loot'
+cycleMarkers: [
+	{
+		type: 'option'
+		value: [
+			'give'
+			'insert'
+			'replace'
+			'spawn'
+		]
+		change:
+			give:[
+			{
+				type: 'entity'
+				value: 'target'
+			}
+		]
+		insert:[
+			{
+				type: 'coord'
+				value: 'x y z'
+			}
+		]
+		spawn:[
+			{
+				type: 'coord'
+				value: 'x y z'
+			}
+		]
+		replace:[
+			type: 'option'
+			value: [
+				'block'
+				'entity'
+			]
+			entity:[
+			{
+				type: 'entity'
+				value: 'target'
+			}
+			]
+			block:[
+				{
+					type: 'coord'
+					value: 'x y z'
+				}
+			]
+			{
+				type: 'inventory-slot'
+				value: 'slot'
+			}
+		]
+
+	}
+	{
+		type: 'option'
+		value: [
+			'fish'
+			'kill'
+			'loot'
+			'mine'
+		]
+		change:
+			fish:[
+				{
+					type: 'string'
+					value: 'block loot'
+				}
+			]
+			loot:[
+				{
+					type: 'string'
+					value: 'block loot'
+				}
+			]
+			kill:[
+				{
+					type: 'entity'
+					value: 'target'
+				}
+			]
+			mine:[
+				{
+					type: 'coord'
+					value: 'x y z'
+				}
+				{
+					type: 'string'
+					value: 'tool'
+				}
+			]
+	}
+]
