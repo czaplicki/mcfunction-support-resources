@@ -3,13 +3,20 @@ cycleMarkers: [
 	{
 		type: 'option'
 		value: [
+			'Burried_Treasure'
+			'Desert_Pyramid'
 			'EndCity'
 			'Fortress'
+			'Igloo'
+			'Jungle_Pyramid'
 			'Mansion'
 			'Mineshaft'
 			'Monument'
+			'Ocean_Ruin'
+			'Pillager_Outpost'
+			'Shipwreck'
 			'Stronghold'
-			'Temple'
+			'Swamp_Hut'
 			'Village'
 		]
 	}
