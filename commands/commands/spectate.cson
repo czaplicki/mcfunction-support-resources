@@ -5,7 +5,7 @@ cycleMarkers: [
 		value: 'target'
 	}
 	{
-		type: 'string'
-		value: 'destination or target'
+		type: 'entity'
+		value: 'target'
 	}
 ]
