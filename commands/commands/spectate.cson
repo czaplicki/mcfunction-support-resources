@@ -1,0 +1,11 @@
+name: 'tp'
+cycleMarkers: [
+	{
+		type: 'entity'
+		value: 'target'
+	}
+	{
+		type: 'entity'
+		value: 'target'
+	}
+]
