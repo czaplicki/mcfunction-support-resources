@@ -10,46 +10,46 @@ cycleMarkers: [
 		]
 		change:
 			give:[
-			{
+				{
 				type: 'entity'
 				value: 'target'
-			}
-		]
-		insert:[
-			{
-				type: 'coord'
-				value: 'x y z'
-			}
-		]
-		spawn:[
-			{
-				type: 'coord'
-				value: 'x y z'
-			}
-		]
-		replace:[
-			type: 'option'
-			value: [
-				'block'
-				'entity'
+				}
 			]
-			entity:[
-			{
-				type: 'entity'
-				value: 'target'
-			}
-			]
-			block:[
+			insert:[
 				{
 					type: 'coord'
 					value: 'x y z'
 				}
 			]
-			{
-				type: 'inventory-slot'
-				value: 'slot'
-			}
-		]
+			spawn:[
+				{
+					type: 'coord'
+					value: 'x y z'
+				}
+			]
+			replace:[
+				type: 'option'
+				value: [
+					'block'
+					'entity'
+				]
+				entity:[
+				{
+					type: 'entity'
+					value: 'target'
+				}
+				]
+				block:[
+					{
+						type: 'coord'
+						value: 'x y z'
+					}
+				]
+				{
+					type: 'inventory-slot'
+					value: 'slot'
+				}
+			]
 
 	}
 	{
